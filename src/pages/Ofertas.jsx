@@ -55,7 +55,7 @@ const estiloFondo = ofertas && position < ofertas.length &&!comentarios
     const obtenerOfertas=async()=>{
        const csrftoken = getCookie('csrftoken');
       try{
-        const response=await fetch("http://127.0.0.1:8000/pizzas/", {
+        const response=await fetch("https://pizzeria-4zfx.onrender.com/pizzas/", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ obtenerOfertas()
     const obtenerComentarios=async()=>{
        const csrftoken = getCookie('csrftoken');
       try{
-        const response=await fetch("http://127.0.0.1:8000/comentarios/", {
+        const response=await fetch("https://pizzeria-4zfx.onrender.com/comentarios/", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -234,7 +234,7 @@ const enviar=async(e)=>{
             : texto)};
     const csrftoken = getCookie('csrftoken');
    try{
-        const response=await fetch("http://127.0.0.1:8000/comentarios/", {
+        const response=await fetch("https://pizzeria-4zfx.onrender.com/comentarios/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
