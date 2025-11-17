@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+
+.letra{
+    text-shadow: 20px 20px 0 #de2e2ec6;
+     
+}
+
+li{
+    list-style: none;
+   
+}
+.hamburger:hover section *{
+    background-color: white;    
+}
+.options .o li{
+    cursor: pointer;
+ 
+}
+
+.comidas section  h2{
+    font-size: 15px;
+     display: inline;
+}
+.comidas section  img{
+     display: inline;
+}
+.girarPizza{
+    animation: mover 3000ms linear;
+}
+
+@keyframes  mover{
+    0%{
+        transform: rotateY(0);
+    }
+   
+    50%{
+        transform: rotateY(180deg);
+     } 100%{
+        transform: rotateY(0deg);
+    }
+}
+
+
+@media (min-width:464px){
+    .comidas section  h2{
+        font-size: 25px;
+    }        
+}
+@media (min-width:778px){
+    .comidas section h2{
+        font-size: 30px;
+    }
+    .precioSp{
+        left: 200px;
+    }
+}
+.formu{
+    animation:aparecer .2s linear;
+    
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0%;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+.abre{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border:0 ;
+    background-color: transparent;
+    gap:0.65rem
+}
+.abre > div{
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+.abre:hover div:first-child{
+    transform: rotate(40deg);
+}
+.abre:hover div:nth-child(2){
+    opacity: 0;
+}
+.abre:hover div:last-child{
+    transform: rotate(-25deg);
+}
+
+.fondo{
+    @media (max-width:500px) {
+        
+    }
+}
+
+.stars img{
+height: 40px;
+width:40px;
+}
+
+/* StarRating.css */
+.star-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.stars-rating {
+  display: flex;
+  gap: 8px;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.rating-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.rating-display {
+  font-size: 14px;
+  color: #666;
+  min-height: 20px;
+}
+
+/* Para la versión con useRef */
+.star-rating-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.star-interactive {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.star-interactive:hover {
+  transform: scale(1.15);
+}
+
+.current-rating {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* StarRating.css */
+
+/* Botón principal de enviar */
+.submit-rating-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  position: relative;
+  bottom: 16.4px;
+  border-top: 1px solid #1555ad;
+}
+
+.submit-rating-btn:hover:not(.disabled) {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+}
+
+.submit-rating-btn:active:not(.disabled) {
+  transform: translateY(0);
+}
+
+.submit-rating-btn.disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-enviar-valoracion {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  min-width: 140px;
+}
+
+.btn-enviar-valoracion:hover:not(:disabled) {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-enviar-valoracion:disabled {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  cursor: not-allowed;
+  color: #9ca3af;
+}
+
+.success-message {
+  color: #059669;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+.rating-display, .current-rating {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 10px 0;
+  min-height: 20px;
+}
