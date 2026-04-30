@@ -442,19 +442,19 @@ onClick={(e) => Megusta(e)}
   
 </button>
 {redesSociales&&( <div className="inline-flex gap-2 mb-6 justify-between">
-           <img src='facebook.png' 
+           <img alt='face' src='facebook.png' 
             onClick={compartirFacebook}
             className="bg-indigo-500 h-[45px] text-xs w-28 hover:bg-indigo-600 cursor-pointer text-white"
           ></img>
-              <img src='whatsapp.png' alt='ja' 
+              <img src='whatsapp.png' alt='whatsapp' 
             onClick={compartirEnWhatsApp}
             className="bg-indigo-500 h-[45px] text-xs w-28 hover:bg-indigo-600 cursor-pointer text-white"
           ></img>
-           <img src='telegram.jpg' alt='ja' 
+           <img src='telegram.jpg' alt='tele' 
             onClick={compartirTelegram}
             className="bg-indigo-500 h-[45px] text-xs w-28 hover:bg-indigo-600 cursor-pointer text-white"
           ></img>
-            <img src='instagram.jpg' alt='ja' 
+            <img src='instagram.jpg' alt='insta' 
             onClick={compartirInstagram}
             className="bg-indigo-500 h-[45px] text-xs w-28 hover:bg-indigo-600 cursor-pointer text-white"
           ></img>
