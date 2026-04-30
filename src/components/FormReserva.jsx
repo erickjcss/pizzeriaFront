@@ -124,7 +124,7 @@ draggable: true,
     }
     const setFechaa=(e)=>{
      
-      alert(fechaHoy)
+    
     setFecha(e)
     const [year, mes, dia] = e.split('-').map(Number);
     const fechaComparar = new Date(year, mes - 1, dia); 
